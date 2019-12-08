@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+    <script src="jQuery/jquery-3.4.0.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font.css">
+    <link href="CSS/index.css" rel="stylesheet">
+    <title>菜单</title>
+</head>
+
+<body>
+    <div class="left-body">
+        <div class="top">
+            <div class="content">
+                <img src="images/logo.png" alt="" width="40px" height="40px" id="logo" class="img-circle">
+                <ul class="left-top">
+                    <li class="bar"><a href="星巴克.html"> HOME </a></li>
+                    <li class="bar"><a href=""> SHOP</a></li>
+					<li class="bar"><a href="登陆.html"> ME </a></li>
+
+                    <li class="bar" class="menu-logo">
+                        <button type="button" class="btn btn-default" id="menu-click"
+                            style="width: 35px; padding: 0px;">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </button> </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <script>
+            $(document).ready(function () {
+                $("#menu-click").click(function () {
+                    $("#menu").toggle();
+                })
+
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                $("#menu-click").click(function () {
+                    $("#all").toggle();
+                })
+            })
+        </script>
+
+
+        <!--左边中部菜单的内容-->
+        <div class="middle" id="navbar-main">
+            <ul id="menu">
+                <li class="middle-li"><a href="">门店</a> </li>
+                <li class="middle-li"><a href="">星享俱乐部</a></li>
+                <li class="middle-li"><a href="菜单.html">菜单</a></li>
+                <li>
+                    <hr>
+                </li>
+                <li class="middle-li"><a href="">星巴克移动</a> </li>
+                <li class="middle-li"><a href="">星礼卡</a></li>
+                <li class="middle-li"><a href="">星巴克臻选™</a></li>
+                <li class="middle-li"><a href="">专心送™</a></li>
+                <li class="middle-li"><a href="">星巴克讲堂</a></li>
+                <li class="middle-li"><a href="">关于星巴克</a></li>
+                <li class="middle-li"><a href="">帮助中心</a></li>
+                <li>
+                    <hr>
+                </li>
+                <div class="btn-login">
+					<span> <a class="sign-in" href="登陆.html"><img src="images/icon-account.png"><span><span>登录</span></span></a> </span>
+					<span> <a class="button small register" href="登陆.html"><span><span>注册</span></span></a> </span>
+				</div>
+
+                <div class="btnn">
+                    <h3>CONTACT US？🤪</h3>
+                    <a class="btn-footer" href="https://github.com">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a class="btn-footer" href="#">
+                        <i class="fa fa-weixin"></i>`
+                    </a>
+                    <a class="btn-footer"
+                        href="tencent://message/?Menu=yes&uin=2531580556&Service=300&sigT=45a1e5847943b64c6ff3990f8a9e644d2b31356cb0b4ac6b24663a3c8dd0f8aa12a595b1714f9d45					">
+                        <i class="fa fa-qq"></i>
+                    </a>
+            </ul>
+
+        </div>
+
+
+
+        <!--左部中间内容-->
+        <div class="middle-login" id="all">
+            <div class="coffee">
+
+                <div class="tabs-wrapper">
+
+                    <ul class="subcategories">
+                        <li> <span>菜单</span></li>
+                        <li>
+                            <a id="side_menu_default" href="/menu/" style="border-bottom: 3px solid #00A862;
+                            color: rgba(0, 0, 0, 0.87);
+                            font-weight: 700;
+                            padding-bottom: 3px;
+                            color: rgba(0, 0, 0, 0.87);
+                            font-size: 16px;">
+                                季度精选
+                            </a>
+                        </li>
+
+                        <li>
+                            <a id="side_menu_beverages" href="/menu/beverages/">
+                                饮料
+                            </a>
+                        </li>
+
+                        <li>
+                            <a id="side_menu_food" href="/menu/food/">
+                                美食
+                            </a>
+                        </li>
+
+                        <li>
+                            <a id="side_menu_coffee" href="/menu/coffee/">
+                                咖啡产品
+                            </a>
+                        </li>
+
+                        <li>
+                            <a id="side_menu_merchandise" href="/menu/merchandise/">
+                                商品
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="right-body">
+        <div class="one">
+
+
+            <div class="banner">
+<center>
+                <section class="hero relative">
+                    <div class="block relative show-mobile tablet-hidden">
+                        <a href="#lto-items">
+                            <img src="images/banner-1.jpg" class="img">
+                        </a>
+                    </div>
+                    <div class="description-wrapper">
+                        <h2>星巴克玩味冰调™，开启轻盈一夏</h2>
+                        <p class="text description" style="padding:0 20px">
+                            这一季，我们带着探索与发现的好奇心，来一场视觉与味觉的双重碰撞。玩味冰调作为今夏全新的产品品类登场，以鸡尾酒为灵感，突破茶与咖啡的传统定义，精心调制出富于层次感的全新饮品。零脂、真材实料、不添加化学合成色素和甜味剂，满足身为潮人的你，对“美味”和“零负担”的双重标准。
+                        </p>
+                    </div>
+                </section>
+                <section class="featured-items">
+
+
+
+                    <div class="item">
+                        <div class="mobile-hidden">
+                            <a href="#lto-items" class="block relative">
+                                <img src="images/banner-2.jpg" class="img">
+                            </a>
+                            <div class="description-wrapper">
+                                <h2>一口轻盈 一口夏天</h2>
+                                <p>全新星轻盈系列，蛋糕也可以清爽一夏无负担。<br>采用风味酸奶为原料，搭配大颗真实果粒，清新轻甜，满足想吃甜点的小心思<br>新口味“茶瓦纳桃桃千层蛋糕”轻甜的奶油融入白桃果肉，不但丰富了口感，更让桃子风味在口中久久留香，满满的初夏味道。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="item">
+                        <div class="mobile-hidden">
+                            <a href="#lto-items" class="block relative">
+                                <img src="images/banner-3.jpg" class="img">
+                            </a>
+                            <div class="description-wrapperr">
+                                <h2>冰沁一夏好时光</h2>
+                                <p>延续星巴克冰杯的外形，不同的水果亮片漂浮在卡片内部，动静之间炫彩缤纷，宛如一杯新鲜果味冰饮一般。内置芯片，可以直接刷卡消费。<br>人鱼系列作为纪念款，延续该系列的设计，<br>配合夏季的主题采用以海蓝色为主基调，辅以海底的美妙景色带来阵阵夏日凉意。<br>随机赠送美型胶带印章挂件，共三款可选。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="item">
+                        <div class="mobile-hidden">
+                            <a href="#lto-items" class="block relative">
+                                <img src="images/banner-4.jpg" class="img">
+                            </a>
+                            <div class="description-wrapper">
+                                <h2>晴空音乐节</h2>
+                                <p>我们热爱音乐，如同热爱咖啡一样。在这个初夏，还有比带着一杯星巴克去音乐节更酷的选择吗？让音乐充满你的心，发现更加活力的自己，<br>无论世界如何变化，咖啡与音乐是享受当下最in的生活态度。<br>自造自我，Love
+                                    &amp; Peace。</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="item">
+                        <div class="mobile-hidden">
+                            <a href="#lto-items" class="block relative">
+                                <img src="images/banner-5.jpg" class="img">
+                            </a>
+                            <div class="description-wrapper">
+                                <h2>音乐酷夏夜</h2>
+                                <p>当夜幕降临，音乐节的高潮即将开始！五彩斑斓的灯光在夜空中闪耀，什么都无法阻止音乐派对的热潮。举起咖啡干杯！找到内心的节拍，释放自我。<br>这个夏天，最炫酷的DJ就是你！还不赶快入手～
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="item">
+                        <div class="mobile-hidden">
+                            <a href="#lto-items" class="block relative">
+                                <img src="images/banner-6.jpg" class="img">
+                            </a>
+                            <div class="description-wrapper">
+                                <h2>邂逅夏威夷</h2>
+                                <p>夏季限定系列，拼配了稀有而珍贵的夏威夷产区咖啡豆，浓郁的夏威夷热带风情设计，一口仿佛置身海洋，清凉而舒爽。独特焦糖般甘甜和果仁般风味的咖啡豆与非洲及拉美地区的咖啡豆拼配，形成了这款口感顺滑而又优雅的深度烘焙咖啡。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="item">
+                        <div class="mobile-hidden">
+                            <a href="#lto-items" class="block relative">
+                                <img src="images/banner-7.jpg" class="img">
+                            </a>
+                            <div class="description-wrapper">
+                                <h2>初夏臻选新体验</h2>
+                                <p>产量稀少而珍贵，风味丰富而与众不同，不可多得的臻选咖啡豆。<br>焦糖及牛奶巧克力般的风味与柑橘般风味互相交织、伴着淡淡的花香与水果般风味。<br>明亮多汁的柠檬和菠萝般的口感，轻尝一口，是初夏的味道。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </center>
+                </section>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

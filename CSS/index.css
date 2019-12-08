@@ -1,0 +1,632 @@
+/*基本的左右布局，左边布局固定 右边布局进行滚动*/
+html {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+/*左右分板布局*/
+.left-body {
+  width: 25%;
+  height: 100%;
+  overflow: hidden;
+  float: left;
+  box-shadow: 0 5px 15px -5px #00000070;
+}
+
+.right-body {
+  width: 75%;
+  height: 100%;
+  overflow: hidden;
+  float: right;
+  background-color: whitesmoke;
+}
+
+
+.one {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+/*对左边的布局元素进行布局*/
+/*对左边上部top部分进行布局*/
+.top {
+  width: 100%;
+  height: 10%;
+  padding-top: 10px;
+
+}
+
+.content {
+  /* box-sizing: content-box;*/
+  margin-left: 25px;
+  padding-top: 10px;
+
+}
+
+#logo {
+  float: left;
+}
+
+.left-top {
+  width: 85%;
+  float: left;
+  margin-left: 15px;
+  padding: 15px 0px 10px 0px;
+}
+
+.bar {
+  width: 20%;
+  float: left;
+  text-align: center;
+  list-style: none;
+}
+
+.bar a {
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+}
+
+#menu-click {
+  margin-left: 80px;
+
+}
+
+
+
+
+
+/*对左边中部菜单进行布局*/
+
+.middle {
+  width: 100%;
+  height: 50%;
+  margin-top: 20%;
+  background-color: white;
+  position: relative;
+
+}
+
+.middle ul{
+  height: 100%;
+  margin-left: 50px;
+  display: none;
+  margin-top: 23%;
+  line-height: 120%;
+
+}
+
+
+.middle-li {
+  width: 100%;
+  height: 30px;
+
+  margin-bottom: 15px;
+
+}
+
+.middle-li a {
+  font-weight: 700;
+  line-height: 100%;
+  font-size: 20px;
+  color: rgba(31, 29, 29, 0.911);
+  text-decoration: none;
+}
+
+.middle ul hr {
+  margin: 20px 0px 20px 0px;
+  margin-left: -25px;
+}
+
+/*#login{
+    width: 50px;
+    height: 50px;
+}*/
+
+/*左边中部内容*/
+.middle-login {
+  width: 500px;
+  margin-top: -700px;
+  background-color: white;
+  position: relative;
+}
+
+
+.coffee {
+  margin-top: 90%;
+  margin-left: 70px;
+  font-size: 26px;
+  font-size: 2.6rem;
+  font-weight: 700;
+  position: absolute;
+
+}
+
+.footer-login span {}
+
+.footer-login {
+  margin: 10px;
+}
+
+.sign-in {
+  margin-right: 15px;
+}
+
+.footer-login a,.btn-login a {
+  color: #00A862;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+
+}
+
+
+
+
+
+
+/*对左边菜单下部进行布局*/
+
+.footer {
+  width: 100%;
+  height: 15%;
+  margin-left: -5px;
+  background-color: white;
+}
+
+.footer p {}
+
+.btnn {
+  margin-top: 30%;
+  margin-left: -70px;
+  position: relative;
+}
+
+.btnn h3 {
+  color: #C2A661;
+  text-shadow:0px;
+}
+
+.btn-footer {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #00A862;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  margin-right: 43px;
+}
+
+.btn-footer i {
+  line-height: 50px;
+  font-size: 26px;
+  transition: 0.2s linear;
+}
+
+.btn-footer:hover i {
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+
+.btn-footer::before {
+  content: '';
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #00A862;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.btn-footer:hover::before {
+  animation: flash 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+
+@keyframes flash {
+  0% {
+    left: -100%;
+    top: 90%;
+  }
+
+  50% {
+    left: 10%;
+    top: -30%;
+  }
+
+  100% {
+    left: -10%;
+    top: -10%;
+  }
+}
+
+
+
+
+
+
+/*右边上部的导航栏进行布局*/
+
+
+
+
+
+
+/*轮播图*/
+.item a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+/*对右部下方的分块内容区进行布局*/
+
+
+ul {
+  list-style: none;
+}
+
+.wrap a {
+  color: #C2A661;
+  text-decoration: none;
+}
+
+.wrap {
+  width: 90%;
+  height: 330px;
+  margin: 0 auto;
+
+}
+
+.wrap ul {
+  margin-left: -20px;
+}
+
+
+.wrap ul li {
+  overflow: hidden;
+  float: left;
+  width: 23%;
+  height: 320px;
+  margin-left: 8%;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px -5px #00000070;
+}
+
+.wrap ul li img {
+  width: 100%;
+  height: 100%;
+  transition-duration: .5s;
+  /*过度变化的时间*/
+}
+
+.wrap ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.wrap ul li:hover img
+
+/*通过鼠标滑过改变图片的样式*/
+  {
+  transform: scale(1.2);
+}
+
+
+.mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transform: translateY(-323px);
+  transition-duration: .5s;
+  /*过度变化的时间*/
+}
+
+.wrap ul li:hover .mask {
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.wrap ul li .text {
+  transform: translateY(-550px);
+  padding-left: 20px;
+}
+
+.text h3 {
+  font-size: 25px;
+  font-weight: normal;
+  transform: translateY(170px);
+  transition-duration: .5s;
+}
+
+.wrap ul li:hover .text h3 {
+  transform: translateY(0px);
+}
+
+
+.text .desc {
+  margin-top: 25px;
+  transform: translateY(250px);
+  transition-duration: .5s;
+}
+
+.wrap ul li:hover .text .desc {
+  transform: translateY(0px);
+}
+
+
+.text .hotal {
+  margin-top: 20px;
+  transform: translateY(300px);
+  transition-duration: .5s;
+}
+
+.wrap ul li:hover .text .hotal {
+  transform: translateY(0px);
+}
+
+
+
+.text .people {
+  margin-top: 15px;
+  transform: translateY(300px);
+  transition-duration: .5s;
+}
+
+.wrap ul li:hover .text .people {
+  transform: translateY(0px);
+}
+
+.cap {
+  width: 100%;
+  height: 100%;
+  padding-top: 70px;
+}
+
+.cap-one {
+  width: 100%;
+  height: 230px;
+  background-color: white;
+  box-shadow: 0 5px 15px -5px #00000070;
+  margin-bottom: 20px;
+}
+
+.starbucks-login h2{
+  display: block;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.starbucks-login {
+  float: right;
+  margin-top: 15px;
+  font-size: 1.6rem;
+  font-weight: 400;
+
+}
+
+.starbucks-login-text .more {
+  text-decoration: none;
+  color: #C2A661;
+}
+
+.starbucks-login-text a {
+  text-decoration: none;
+  color: #00A862;
+}
+
+.img-logo {
+  width: 230px;
+  margin-top: 80px;
+  margin-left: 60%;
+}
+
+center {
+  text-align: center;
+}
+
+/*第二个盒子*/
+.cap-two {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 10px;
+}
+
+.cap-two ul {
+  margin-top: 65px;
+}
+
+.cap-two ul li {
+  width: 180px;
+  height: 220px;
+  float: left;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgba(255, 255, 255, 0.774);
+  border-radius: 3px;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  margin-right: 8.5%;
+  padding: 12px;
+}
+
+.move a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.cap-two ul img {
+  width: 100px;
+  margin-top: -65px;
+  
+}
+
+
+.move .more {
+  text-decoration: none;
+  color: #C2A661;
+}
+.move li{
+  margin-top: 60px; 
+}
+
+.move li:hover {
+  box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.12);
+  transform: translate3d(0, -7px, 0);
+  transition: all 0.2s ease;
+}
+
+
+/*第三个盒子设置*/
+
+.cap-three {
+  width: 100%;
+  height: 400px;
+  margin-top: 4%;
+  background-color: white ;
+  box-shadow: 0 5px 15px -5px #00000070;
+}
+.container.house{
+  width: 30%;
+}
+.cap-three h2{
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 140%;
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+}
+.wrapper-mobile{
+  margin-top: 20px;
+}
+.cap-three .move{
+
+
+}
+.cap-three .move li{
+  height: 200px;
+  background-color: white;
+  padding: 25px;
+  margin: 30px;
+}
+.cap-three .move img{
+    width: 20%;
+}
+.cap-three h2{
+  display: block;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 40px;
+}
+.cap-three .know{
+  color: #C2A661;
+}
+.cap-three .text{
+  font-size: 13px;
+  font-weight: 70;
+  color: #00A862;
+}
+
+
+
+/*登陆界面样式设置*/
+.line{
+  border-bottom: 3px solid #00A862;
+
+}
+.login img{
+  max-width: 100%;
+}
+.app{
+  width: 100%;
+  padding: 2% 8% 2% 8%;
+}
+.img-right img{
+  width: 193px;
+  height: 409px;
+}
+.text-left{
+  width: 50%;
+  height: 400px;
+  margin-left: 90px;
+  float: left;
+  padding: 10% 0% 10% 15%;
+}
+.text-left h2{
+  font-size: 22px;
+  font-size: 2.2rem;
+  font-weight: 400;
+line-height: 140%;
+
+}
+.text-left p a{
+  text-decoration: none;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 160%;
+  color: #00A862;
+}
+.img-right{
+  float: left;
+  margin-left: 70px;
+}
+.ko{
+  border-bottom: 3px solid #00A862;
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 700;
+    padding-bottom: 3px;
+}
+
+
+/*菜单*/
+.subcategories span{
+  font-size: 26px;
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.subcategories li a{
+color: #000;
+font-family: "Gotham", Helvetica, Arial, PingFangSC-Regular, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+font-size: 14px;
+font-weight: normal;
+line-height: 160%;
+}
+.tabs-wrapper{
+  margin-top: -70px;
+}
+
+
+.banner img{
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+.description-wrapper{
+    padding: 2% 30% 2% 30%;
+}

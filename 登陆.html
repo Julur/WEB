@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+	<script src="jQuery/jquery-3.4.0.min.js"></script>
+	<script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="font.css">
+	<link href="CSS/index.css" rel="stylesheet">
+    <title>登陆</title>
+</head>
+
+<body>
+	<div class="left-body">
+		<div class="top">
+			<div class="content">
+				<img src="images/logo.png" alt="" width="40px" height="40px" id="logo" class="img-circle">
+				<ul class="left-top">
+					<li class="bar"><a href="星巴克.html"> HOME </a></li>
+					<li class="bar"><a href=""> SHOP</a></li>
+					<li class="bar"><a href="登陆.html"> ME </a></li>
+
+					<li class="bar" class="menu-logo">
+						<button type="button" class="btn btn-default" id="menu-click"
+							style="width: 35px; padding: 0px;">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+						</button> </li>
+
+				</ul>
+			</div>
+
+		</div>
+		<script>
+			$(document).ready(function () {
+				$("#menu-click").click(function () {
+					$("#menu").toggle();
+				})
+
+			});
+		</script>
+
+		<script>
+		$(document).ready(function(){
+			$("#menu-click").click(function(){
+				$("#all").toggle();
+			})
+		})
+		</script>
+
+
+		<!--左边中部菜单的内容-->
+		<div class="middle" id="navbar-main">
+			<ul id="menu">
+				<li class="middle-li"><a href="">门店</a> </li>
+				<li class="middle-li"><a href="">星享俱乐部</a></li>
+				<li class="middle-li"><a href="菜单.html">菜单</a></li>
+				<li>
+					<hr>
+				</li>
+				<li class="middle-li"><a href="">星巴克移动</a> </li>
+				<li class="middle-li"><a href="">星礼卡</a></li>
+				<li class="middle-li"><a href="">星巴克臻选™</a></li>
+				<li class="middle-li"><a href="">专心送™</a></li>
+				<li class="middle-li"><a href="">星巴克讲堂</a></li>
+				<li class="middle-li"><a href="">关于星巴克</a></li>
+				<li class="middle-li"><a href="">帮助中心</a></li>
+				<li>
+					<hr>
+				</li>
+				<div class="btn-login">
+					<span> <a class="sign-in" href="登陆.html"><img src="images/icon-account.png"><span><span>登录</span></span></a> </span>
+					<span> <a class="button small register" href="登陆.html"><span><span>注册</span></span></a> </span>
+				</div>
+				
+			<div class="btnn">
+				<h3>CONTACT US？🤪</h3>
+				<a class="btn-footer" href="https://github.com">
+					<i class="fa fa-github"></i>
+				</a>
+				<a class="btn-footer" href="#">
+					<i class="fa fa-weixin"></i>`
+				</a>
+				<a class="btn-footer"
+					href="tencent://message/?Menu=yes&uin=2531580556&Service=300&sigT=45a1e5847943b64c6ff3990f8a9e644d2b31356cb0b4ac6b24663a3c8dd0f8aa12a595b1714f9d45					">
+					<i class="fa fa-qq"></i>
+				</a>
+			</ul>
+			
+			</div>
+
+
+
+			 <!--左部中间内容-->
+			<div class="middle-login" id="all">
+			 <div class="coffee">  <span>登录或创建一个新帐户&nbsp;🌟</span>
+				<div class="footer-login" id="all">
+					<span> <a class="sign-in" href="登陆.html"><img src="images/icon-account.png"><span><span>登录</span></span></a> </span>
+					<span> <a class="button small register" href="登陆.html"><span><span class="ko">注册</span></span></a> </span>
+				</div>
+			   </div>
+			</div>
+
+		</div>
+   
+
+
+    </div>
+
+    <div class="right-body">
+        <div class="one">
+			<div class="login">
+			<img src="images/header_cn.jpg" alt="">
+			<div class="app">
+				<div class="text-left">
+						<h2><span>使用星巴克App进行注册</span></h2>
+						<p><span>现在就下载</span><a href="/apps/" class="link ga-view-app-page"><span>星巴克App</span></a><span>便可直接用手机进行注册、支付、查看消费记录及管理卡片。</span></p>
+				</div>
+
+				<div class="img-right"><img src="images/register-download-app-image-cn.png" alt=""> </div>
+			</div>
+           
+		</div>
+	</div>
+    </div>
+
+</body>
+
+</html>
